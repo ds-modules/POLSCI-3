@@ -1,0 +1,76 @@
+Variable:		religion
+Variable Description:	religious self-identification
+NES Variable Number:	V043247
+Variable Values:	1 Protestant
+			2 Catholic
+			4 Jewish
+			6 Other
+			7 None
+
+Variable:		female
+Variable Description:	gender
+NES Variable Number:	V041109a
+Variable Values:	1 female
+			0 male
+
+Variable:		bush
+Variable Description:	Did respondent vote for Bush or Kerry?
+NES Variable Number:	V045026
+Variable Values:	1 Respondent voted for Bush
+			0 Respondent voted for Kerry
+
+Variable:		unionhouse
+Variable Description:	Is respondent from a union household?
+NES Variable Number:	V043290
+Variable Values:	1 Respondent is from a union household
+			0 Respondent is not from a union household
+	
+Variable:		partyid
+Variable Description:	Generally speaking, does the repondent consider themselves to be...
+NES Variable Number:	V043116
+Variable Values:	-3 Strong Democrat
+			-2 Weak Democrat
+			-1 Independent Democrat
+			0 Independent Independent
+			1 Independent Republican
+			2 Weak Republican
+			3 Strong Republican
+
+Variable:		eval_WoT
+Variable Description:	Respondent's evaluation of Bush's handling of the War on Terror
+NES Variable Number:	V043033
+Variable Values:	-2 disapprove strongly
+			-1 disapprove not strongly
+			0 don't know
+			1 approve not strongly
+			2 approve strongly
+
+Variable:		eval_HoE
+Variable Description:	Respondent's evaluation of Bush's handling of the Health of the Economy
+NES Variable Number:	V043027
+Variable Values:	-2 disapprove strongly
+			-1 disapprove not strongly
+			0 don't know
+			1 approve not strongly
+			2 approve strongly
+
+Variable:		bush_therm
+Variable Description:	Respondents thermometer rating of Bush
+NES Variable Number:	V043048
+Variable Values:	scale from 0 to 100
+
+Variable:		income
+Variable Description:	Respondent's reported income
+NES Variable Number:	V043293x
+Variable Values:	scale from 1 (none or less than $2999) to 23 ($120,000 and over)
+
+Variable:		ideology
+Variable Description:	Respondent's reported
+NES Variable Number:	V043085
+Variable Values:	scale from 1 (extremely liberal) to 7 (extremely conservative)
+
+Variable:		education
+Variable Description:	Respondent's education level
+NES Variable Number: 	V043254
+Variable Values:	scale from 1 (8 grades or less) to 7 (Advanced degree)
+
