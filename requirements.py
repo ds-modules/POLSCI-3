@@ -7,7 +7,7 @@ nb_files = glob.glob(f'{os.getcwd()}/**/*.ipynb',
 py_files = glob.glob(f'{os.getcwd()}/**/*.py',
                   recursive=True)
 def convert_nb(file_name):
-    export_path = f'{os.getcwd()}\{os.path.split(file_name)[1][:-5]}py'
+    export_path = f'{os.getcwd()}/{os.path.split(file_name)[1][:-5]}py'
     print(export_path)
     with open(file_name, encoding="utf8") as fn:
         nb = nbformat.read(fn, as_version=4)
@@ -22,7 +22,7 @@ def convert_nb(file_name):
         fh.writelines(source)
 
 def delete_NB_py(file_name):
-    os.remove(f'{os.getcwd()}\{os.path.split(file_name)[1][:-5]}py')
+    os.remove(f'{os.getcwd()}/{os.path.split(file_name)[1][:-5]}py')
 
 for file in nb_files:
     convert_nb(file)
