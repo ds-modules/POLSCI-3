@@ -2,9 +2,10 @@ from nbconvert import PythonExporter
 import nbformat
 import glob
 import os
-files = glob.glob(f'{os.getcwd()}/**/*.ipynb',
+nb_files = glob.glob(f'{os.getcwd()}/**/*.ipynb',
                   recursive=True)
-
+py_files = glob.glob(f'{os.getcwd()}/**/*.py',
+                  recursive=True)
 def convert_nb(file_name):
     export_path = f'{os.getcwd()}\{os.path.split(file_name)[1][:-5]}py'
     print(export_path)
@@ -23,7 +24,7 @@ def convert_nb(file_name):
 def delete_NB_py(file_name):
     os.remove(f'{os.getcwd()}\{os.path.split(file_name)[1][:-5]}py')
 
-for file in files:
+for file in nb_files:
     convert_nb(file)
 
 import importlib
@@ -34,5 +35,6 @@ if maybe_pipreq is None:
     subprocess.call([sys.executable, '-m', 'pip', 'install', "pipreqs"]) 
 os.system("pipreqs --force --encoding utf8")
 
-for file in files:
-    delete_NB_py(file)
+for file in nb_files:
+    if file not in py_files:
+        delete_NB_py(file)
